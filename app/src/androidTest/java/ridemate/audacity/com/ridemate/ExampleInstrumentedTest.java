@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("ridemate.audacity.com.ridemate", appContext.getPackageName());
+        assertEquals("com.audacity.ridemate.audacity.com.com.audacity.ridemate", appContext.getPackageName());
     }
 }
