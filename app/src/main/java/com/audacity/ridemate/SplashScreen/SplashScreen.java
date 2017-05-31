@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.audacity.ridemate.MainActivity;
+import com.audacity.ridemate.ConfirmationPage.MainActivity;
 import com.audacity.ridemate.R;
 import com.daimajia.androidanimations.library.Techniques;
 

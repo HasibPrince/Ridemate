@@ -1,13 +1,19 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ridemate.audacity.com.ridemate.MapFragment">
+    tools:context="com.audacity.ridemate.ConfirmationPage.MapFragment">
     <RelativeLayout
+        android:id="@+id/topPanel"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:background="?attr/colorPrimary"/>
-    
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_below="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -37,4 +43,6 @@
 
 
     </RelativeLayout>
-</FrameLayout>
+
+
+</RelativeLayout>
