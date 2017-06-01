@@ -31,6 +31,7 @@
             android:background="@color/green"/>
 
         <TextView
+            android:id="@+id/pickup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -38,6 +39,24 @@
             android:layout_toRightOf="@+id/color_point"
             android:textColor="@color/Black"
             android:text="PICK UP POINT"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pickup"
+            android:layout_toRightOf="@id/color_point"
+            android:layout_marginLeft="10dp"
+            android:text=""/>
+
+        <ImageView
+            android:id="@+id/gps"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/gps"/>
 
 
 

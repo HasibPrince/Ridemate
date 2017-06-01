@@ -3,13 +3,19 @@ package com.audacity.ridemate.ConfirmationPage;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.audacity.ridemate.R;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
@@ -26,12 +32,13 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
-public class MapFragment extends Fragment implements OnMapReadyCallback {
+public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragmentContract.View {
 
-    private MapView mapView;
-    private GoogleMap map;
     private MapView mMapView;
     private GoogleMap googleMap;
+    private ImageView gpsView;
+    private com.audacity.ridemate.LocationManager locationManager;
+    private TextView address;
 
     public MapFragment() {
         // Required empty public constructor
@@ -52,67 +59,94 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_map, container, false);
+        locationManager = new com.audacity.ridemate.LocationManager(getContext());
+        initUI(savedInstanceState, view);
+        return view;
+    }
+
+    private void initUI(Bundle savedInstanceState, View view) {
+        initMap(savedInstanceState, view);
+
+        initGPSButton(view);
+
+        address = (TextView) view.findViewById(R.id.address);
+    }
+
+    private void initGPSButton(View view) {
+        gpsView = (ImageView) view.findViewById(R.id.gps);
+        gpsView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showCurrentLocationInMap();
+            }
+        });
+    }
+
+    private void initMap(Bundle savedInstanceState, View view) {
         mMapView = (MapView) view.findViewById(R.id.mapview);
         mMapView.onCreate(savedInstanceState);
 
-        mMapView.onResume(); // needed to get the map to display immediately
+        mMapView.onResume();
 
         try {
             MapsInitializer.initialize(getActivity().getApplicationContext());
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        mMapView.getMapAsync(new OnMapReadyCallback() {
-            @Override
-            public void onMapReady(GoogleMap mMap) {
-                googleMap = mMap;
-
-                // For showing a move to my location button
-                if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                    // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
-                    // here to request the missing permissions, and then overriding
-                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                    //                                          int[] grantResults)
-                    // to handle the case where the user grants the permission. See the documentation
-                    // for ActivityCompat#requestPermissions for more details.
-                    return;
-                }
-                googleMap.setMyLocationEnabled(true);
-                googleMap.getUiSettings().setMyLocationButtonEnabled(false);
-
-                // For dropping a marker at a point on the Map
-                LatLng sydney = new LatLng(-34, 151);
-                MarkerOptions marker = new MarkerOptions().position(sydney).title("Marker Title").snippet("Marker Description");
-                marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.car));
-                googleMap.addMarker(marker);
-
-                // For zooming automatically to the location of the marker
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(12).build();
-                googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-            }
-        });
-        return view;
+        mMapView.getMapAsync(this);
     }
 
+    private void showCurrentLocationInMap() {
+        LocationManager locationManager = (LocationManager) getActivity().getSystemService(getActivity().LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+        String bestProvider = locationManager.getBestProvider(criteria, true);
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
+            return;
+        }
+
+        Location location = this.locationManager.findCurrentLocation();
+        Log.d(getTag(), "Location: " + location.getProvider() + "==>>lat: " + location.getLatitude() + " lon: " + location.getLongitude());
+        if (location != null) {
+            showALocationInMap(location.getLatitude(), location.getLongitude());
+            address.setText(this.locationManager.getAddress(location));
+
+        }
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
+    private void showALocationInMap(double lat, double lon) {
+
+        LatLng sydney = new LatLng(lat, lon);
+        MarkerOptions marker = new MarkerOptions().position(sydney).title("Marker Title").snippet("Marker Description");
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.car));
+        googleMap.addMarker(marker);
+
+        CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(15).build();
+        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng sydney = new LatLng(-33.852, 151.211);
-        googleMap.addMarker(new MarkerOptions().position(sydney)
-                .title("Marker in Sydney"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        this.googleMap = googleMap;
+
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+
+        googleMap.setMyLocationEnabled(false);
+        googleMap.getUiSettings().setMyLocationButtonEnabled(false);
+
+        showALocationInMap(-34, 151);
+    }
+
+    @Override
+    public void setPresenter(MapFragmentContract.Presenter presenter) {
+
+    }
+
+    @Override
+    public void showALocationInMap(double lat, double lon, String address) {
+
     }
 }
