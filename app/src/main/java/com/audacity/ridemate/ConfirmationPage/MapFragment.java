@@ -5,11 +5,15 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
+import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -18,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.audacity.ridemate.NavigationBarAdapter;
 import com.audacity.ridemate.R;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.maps.CameraUpdate;
@@ -40,6 +45,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragm
     private ImageView gpsView;
     private com.audacity.ridemate.LocationManager locationManager;
     private TextView address;
+    private RecyclerView recyclerView;
 
     public MapFragment() {
         // Required empty public constructor
@@ -71,6 +77,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragm
         initGPSButton(view);
 
         address = (TextView) view.findViewById(R.id.address);
+
+        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        NavigationBarAdapter adapter = new NavigationBarAdapter(getActivity());
+        //adapter.setOnNavigationItemSelectedListener(this);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),5));
     }
 
     @Override
@@ -109,16 +121,27 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragm
 
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
-            return;
+            askForPermission();
         }
 
         Location location = this.locationManager.findCurrentLocation();
-        Log.d(getTag(), "Location: " + location.getProvider() + "==>>lat: " + location.getLatitude() + " lon: " + location.getLongitude());
+        //Log.d(getTag(), "Location: " + location.getProvider() + "==>>lat: " + location.getLatitude() + " lon: " + location.getLongitude());
         if (location != null) {
             showALocationInMap(location.getLatitude(), location.getLongitude());
             address.setText(this.locationManager.getAddress(location));
 
         }
+    }
+
+    private void askForPermission() {
+        ActivityCompat.requestPermissions( getActivity(), new String[] {  Manifest.permission.ACCESS_COARSE_LOCATION  },
+                101 );
+        showCurrentLocationInMap();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
     private void showALocationInMap(double lat, double lon) {
@@ -137,7 +160,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragm
         this.googleMap = googleMap;
 
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return;
+           askForPermission();
         }
 
         googleMap.setMyLocationEnabled(false);
