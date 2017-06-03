@@ -104,10 +104,96 @@
                 android:layout_gravity="bottom"
                 android:orientation="vertical">
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp">
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/Black"
+
+                        android:text="6 Min"/>
+
+                    <TextView
+                        android:id="@+id/eta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/time"
+                        android:layout_centerHorizontal="true"
+                        android:text="ETA"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/multiplier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:layout_centerInParent="true"
+                        android:text="2.1x"/>
+
+                    <TextView
+                        android:id="@+id/charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/multiplier"
+                        android:layout_centerInParent="true"
+                        android:text="Charge"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp">
+
+                    <TextView
+                        android:id="@+id/people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"
+                        android:text="6 People"/>
+
+                    <TextView
+                        android:id="@+id/capacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/people"
+                        android:layout_centerHorizontal="true"
+                        android:text="Capacity"/>
+
+                </RelativeLayout>
+
+
+                </RelativeLayout>
+
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/recycler_view"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
+                    android:layout_margin="10dp"
                     android:background="@color/transparent"/>
 
                 <!--<android.support.design.widget.BottomNavigationView-->
@@ -125,8 +211,9 @@
     </com.sothree.slidinguppanel.SlidingUpPanelLayout>
 <Button
     android:layout_width="match_parent"
-    android:layout_height="40dp"
+    android:layout_height="50dp"
     android:text="CONFIRM"
+    android:textColor="@color/white"
     android:background="@color/holo_blue_dark"
     android:layout_gravity="bottom"
     android:layout_below="@+id/sliding_layout"/>
