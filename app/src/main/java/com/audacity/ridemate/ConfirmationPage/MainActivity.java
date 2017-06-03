@@ -33,8 +33,10 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        MapFragment mapFragment = MapFragment.newInstance();
+        ViewUtils.addFragmentToActivity(getSupportFragmentManager(), mapFragment,R.id.container);
 
-        ViewUtils.addFragmentToActivity(getSupportFragmentManager(),MapFragment.newInstance(),R.id.container);
+        new MapPresenter(mapFragment);
 
     }
 

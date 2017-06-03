@@ -67,10 +67,17 @@ public class NavigationBarAdapter extends RecyclerView.Adapter {
                 public void onClick(View view) {
                     selectedPosition = position;
                     notifyDataSetChanged();
-                    //listener.onItemSelected(getNavigationItemByPosition(position));
+
+                    notifySelectedListener(position);
                 }
             });
 
+    }
+
+    private void notifySelectedListener(int position) {
+        if(listener!=null) {
+            listener.onItemSelected(position);
+        }
     }
 
     @Override
@@ -78,21 +85,9 @@ public class NavigationBarAdapter extends RecyclerView.Adapter {
         return 5;
     }
 
-    private NAVIGATION_ITEMS getNavigationItemByPosition(int position) {
-        switch (position) {
-            case 0:
-                return NAVIGATION_ITEMS.SCOREBOARD;
-            case 1:
-                return NAVIGATION_ITEMS.APPRAISALS;
-            case 2:
-                return NAVIGATION_ITEMS.GOALS;
-            case 3:
-                return NAVIGATION_ITEMS.CONTACTS;
-            case 4:
-                return NAVIGATION_ITEMS.MORE;
-            default:
-                return NAVIGATION_ITEMS.SCOREBOARD;
-        }
+    public void setSelectedPosition(int position){
+        this.selectedPosition = position;
+        notifySelectedListener(position);
     }
 
     public void setOnNavigationItemSelectedListener(NavigationItemSelectedListener listener) {
@@ -135,6 +130,6 @@ public class NavigationBarAdapter extends RecyclerView.Adapter {
     }
 
     public interface NavigationItemSelectedListener{
-        void onItemSelected(NAVIGATION_ITEMS item);
+        void onItemSelected(int id);
     }
 }

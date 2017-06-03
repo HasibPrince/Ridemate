@@ -22,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.audacity.ridemate.Model.Ride;
 import com.audacity.ridemate.NavigationBarAdapter;
 import com.audacity.ridemate.R;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
@@ -38,14 +39,17 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
-public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragmentContract.View {
+public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragmentContract.View,NavigationBarAdapter.NavigationItemSelectedListener {
 
     private MapView mMapView;
     private GoogleMap googleMap;
     private ImageView gpsView;
     private com.audacity.ridemate.LocationManager locationManager;
-    private TextView address;
+    private TextView address, timeTextView, multiplierTextView, capacityTextView;
     private RecyclerView recyclerView;
+
+    private MapFragmentContract.Presenter presenter;
+    private NavigationBarAdapter adapter;
 
     public MapFragment() {
         // Required empty public constructor
@@ -71,24 +75,38 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragm
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        presenter.start();
+        adapter.setSelectedPosition(2);
+    }
+
     private void initUI(Bundle savedInstanceState, View view) {
         initMap(savedInstanceState, view);
 
         initGPSButton(view);
 
-        address = (TextView) view.findViewById(R.id.address);
+        initTextViews(view);
 
+        initRecyclerView(view);
+    }
+
+    private void initRecyclerView(View view) {
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-        NavigationBarAdapter adapter = new NavigationBarAdapter(getActivity());
-        //adapter.setOnNavigationItemSelectedListener(this);
+        adapter = new NavigationBarAdapter(getActivity());
+        adapter.setOnNavigationItemSelectedListener(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),5));
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
+    private void initTextViews(View view) {
+        address = (TextView) view.findViewById(R.id.address);
+        timeTextView = (TextView) view.findViewById(R.id.time);
+        multiplierTextView = (TextView) view.findViewById(R.id.multiplier);
+        capacityTextView = (TextView) view.findViewById(R.id.people);
     }
+
 
     private void initGPSButton(View view) {
         gpsView = (ImageView) view.findViewById(R.id.gps);
@@ -171,11 +189,19 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragm
 
     @Override
     public void setPresenter(MapFragmentContract.Presenter presenter) {
+        this.presenter = presenter;
+    }
 
+
+    @Override
+    public void showRideInfo(Ride ride) {
+        timeTextView.setText(ride.getTime());
+        multiplierTextView.setText(ride.getMultiplier());
+        capacityTextView.setText(ride.getCapacity());
     }
 
     @Override
-    public void showALocationInMap(double lat, double lon, String address) {
-
+    public void onItemSelected(int id) {
+        presenter.getRideDataById(id);
     }
 }

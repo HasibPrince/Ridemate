@@ -2,6 +2,7 @@ package com.audacity.ridemate.ConfirmationPage;
 
 import com.audacity.ridemate.BasePresenter;
 import com.audacity.ridemate.BaseView;
+import com.audacity.ridemate.Model.Ride;
 
 /**
  * Created by Prince on 5/31/17.
@@ -10,11 +11,11 @@ import com.audacity.ridemate.BaseView;
 public interface MapFragmentContract {
 
      interface View extends BaseView<Presenter>{
-            void showALocationInMap(double lat, double lon, String address);
-         
+            void showRideInfo(Ride ride);
      }
 
      interface Presenter extends BasePresenter{
-            void findLocation();
+
+         void getRideDataById(int id);
      }
 }
