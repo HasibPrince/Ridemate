@@ -12,6 +12,18 @@ import java.util.List;
 
 public class LocalDataSource implements ILocalDataSource<List<com.audacity.ridemate.Model.RemoteModel.Client>> {
 
+    private static LocalDataSource instance;
+
+    public static LocalDataSource getInstance(){
+        if(instance == null){
+            instance = new LocalDataSource();
+        }
+        return instance;
+    }
+
+    private LocalDataSource(){
+
+    }
 
     @Override
     public void getData(DataFetchedListener<List<ClientData>> dataFetchedListener) {

@@ -20,6 +20,18 @@ import retrofit2.Retrofit;
 
 public class RemoteDataSource implements DataSource<List<Client>>{
     private static final String TAG = RemoteDataSource.class.getName();
+    private static RemoteDataSource instance;
+
+    public static RemoteDataSource getInstance() {
+        if(instance == null){
+            instance = new RemoteDataSource();
+        }
+        return instance;
+    }
+
+    private RemoteDataSource(){
+
+    }
 
     @Override
     public void getData(final DataFetchedListener<List<Client>> dataFetchedListener) {

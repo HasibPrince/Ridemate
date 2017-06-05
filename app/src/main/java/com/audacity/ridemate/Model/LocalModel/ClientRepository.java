@@ -21,7 +21,7 @@ public class ClientRepository {
         this.remoteDataSource = remoteDataSource;
     }
 
-    void getClients(final DataReadyListener dataReadyListener){
+    public void getClients(final DataReadyListener dataReadyListener){
         localDataSource.getData(new DataFetchedListener<List<ClientData>>() {
             @Override
             public void onDtaFetched(List<ClientData> data) {
