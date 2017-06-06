@@ -17,13 +17,13 @@ import java.util.List;
 public class Client extends Model {
 
     @Column(name = "name")
-    private String name;
+    public String name;
     @Column(name = "logo")
-    private String logo;
+    public String logo;
     @Column(name = "company")
-    private String company;
+    public String company;
     @Column(name = "country")
-    private String country;
+    public String country;
 
     public Client(){
         super();

@@ -10,7 +10,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.audacity.ridemate.ClientPage.ClientsFragment;
+import com.audacity.ridemate.ClientPage.ClientsPresenter;
 import com.audacity.ridemate.R;
+import com.audacity.ridemate.Utils.Injector;
 import com.audacity.ridemate.Utils.ViewUtils;
 
 public class MainActivity extends AppCompatActivity
@@ -77,6 +80,11 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            ClientsFragment fragment = ClientsFragment.newInstance();
+            new ClientsPresenter(fragment
+                    , Injector.getClientRepository(Injector.getLocalDataSource()
+                    , Injector.getRemoteDataSource()));
+            ViewUtils.addFragmentToActivity(getSupportFragmentManager(),fragment,R.id.container);
 
         } else if (id == R.id.nav_slideshow) {
 

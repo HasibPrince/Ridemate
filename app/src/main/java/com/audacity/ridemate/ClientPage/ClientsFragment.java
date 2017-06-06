@@ -26,7 +26,7 @@ public class ClientsFragment extends Fragment implements ClientPageContract.View
         // Required empty public constructor
     }
 
-    public static ClientsFragment newInstance(String param1, String param2) {
+    public static ClientsFragment newInstance() {
         ClientsFragment fragment = new ClientsFragment();
         return fragment;
     }
@@ -52,6 +52,7 @@ public class ClientsFragment extends Fragment implements ClientPageContract.View
     @Override
     public void onResume() {
         super.onResume();
+        presenter.start();
     }
 
     @Override

@@ -50,9 +50,9 @@ public class LocalDataSource implements ILocalDataSource<List<com.audacity.ridem
 
         for(com.audacity.ridemate.Model.RemoteModel.Client clientData : clientList) {
             Client client = new Client();
-            client.setCountry(clientData.getName());
+            client.setName(clientData.getName());
             client.setCompany(clientData.getCompany());
-            client.setCountry(clientData.getLogo());
+            client.setLogo(clientData.getLogo());
             client.setCountry(clientData.getCountry());
             client.save();
 

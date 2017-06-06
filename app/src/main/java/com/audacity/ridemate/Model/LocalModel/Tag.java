@@ -13,11 +13,11 @@ import java.util.List;
 @Table(name = "Tag")
 public class Tag extends Model {
     @Column (name = "company")
-    private String company;
+    public String company;
     @Column(name = "tag")
-    private String tag;
+    public String tag;
     @Column(name = "url")
-    private String url;
+    public String url;
 
     public Tag(){
         super();
@@ -50,7 +50,7 @@ public class Tag extends Model {
     public static List<Tag> getTagByCompany(String company){
         return new Select()
                 .from(Tag.class)
-                .where("comapany = ?", company)
+                .where("company = ?", company)
                 .execute();
     }
 }

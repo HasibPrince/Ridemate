@@ -1,5 +1,8 @@
 package com.audacity.ridemate.Utils;
 
+import com.audacity.ridemate.Model.DataSource;
+import com.audacity.ridemate.Model.LocalModel.ClientRepository;
+import com.audacity.ridemate.Model.LocalModel.ILocalDataSource;
 import com.audacity.ridemate.Model.LocalModel.LocalDataSource;
 import com.audacity.ridemate.Model.RemoteModel.RemoteDataSource;
 
@@ -15,5 +18,9 @@ public class Injector {
 
     public static RemoteDataSource getRemoteDataSource(){
         return RemoteDataSource.getInstance();
+    }
+
+    public static ClientRepository getClientRepository(ILocalDataSource localDataSource, DataSource remoteDataSource){
+        return new ClientRepository(localDataSource,remoteDataSource);
     }
 }
