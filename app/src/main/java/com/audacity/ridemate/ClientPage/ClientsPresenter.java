@@ -1,7 +1,7 @@
 package com.audacity.ridemate.ClientPage;
 
 import com.audacity.ridemate.Model.ClientData;
-import com.audacity.ridemate.Model.LocalModel.ClientRepository;
+import com.audacity.ridemate.Model.ClientRepository;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.audacity.ridemate.Model;
+package com.audacity.ridemate.Model.LocalModel;
 
 import android.support.annotation.Nullable;
 

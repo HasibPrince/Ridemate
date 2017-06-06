@@ -47,6 +47,7 @@ public class LocalDataSource implements ILocalDataSource<List<com.audacity.ridem
     @Override
     public void save(List<com.audacity.ridemate.Model.RemoteModel.Client> clientList) {
         Client.clear();
+        Tag.clear();
 
         for(com.audacity.ridemate.Model.RemoteModel.Client clientData : clientList) {
             Client client = new Client();

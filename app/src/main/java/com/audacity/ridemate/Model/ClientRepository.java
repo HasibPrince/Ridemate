@@ -1,8 +1,9 @@
-package com.audacity.ridemate.Model.LocalModel;
+package com.audacity.ridemate.Model;
 
 import com.audacity.ridemate.Model.ClientData;
 import com.audacity.ridemate.Model.DataFetchedListener;
 import com.audacity.ridemate.Model.DataSource;
+import com.audacity.ridemate.Model.LocalModel.ILocalDataSource;
 import com.audacity.ridemate.Model.RemoteModel.*;
 import com.audacity.ridemate.Model.RemoteModel.Client;
 
@@ -34,8 +35,6 @@ public class ClientRepository {
 
             });
         }
-
-
     }
 
     private void fetchFromLocalDataSource(final DataReadyListener dataReadyListener) {

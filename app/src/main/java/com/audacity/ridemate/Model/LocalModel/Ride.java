@@ -1,4 +1,4 @@
-package com.audacity.ridemate.Model;
+package com.audacity.ridemate.Model.LocalModel;
 
 /**
  * Created by Prince on 6/3/17.

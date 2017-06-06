@@ -1,7 +1,7 @@
 package com.audacity.ridemate.Utils;
 
 import com.audacity.ridemate.Model.DataSource;
-import com.audacity.ridemate.Model.LocalModel.ClientRepository;
+import com.audacity.ridemate.Model.ClientRepository;
 import com.audacity.ridemate.Model.LocalModel.ILocalDataSource;
 import com.audacity.ridemate.Model.LocalModel.LocalDataSource;
 import com.audacity.ridemate.Model.RemoteModel.RemoteDataSource;

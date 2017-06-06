@@ -3,6 +3,7 @@ package com.audacity.ridemate.Model.LocalModel;
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
+import com.activeandroid.query.Delete;
 import com.activeandroid.query.Select;
 
 import java.util.List;
@@ -52,5 +53,9 @@ public class Tag extends Model {
                 .from(Tag.class)
                 .where("company = ?", company)
                 .execute();
+    }
+
+    public static void clear(){
+        new Delete().from(Tag.class).execute();
     }
 }

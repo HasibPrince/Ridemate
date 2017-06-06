@@ -2,8 +2,8 @@ package com.audacity.ridemate.ConfirmationPage;
 
 import android.support.annotation.NonNull;
 
-import com.audacity.ridemate.Model.Ride;
-import com.audacity.ridemate.Model.RideDAO;
+import com.audacity.ridemate.Model.LocalModel.Ride;
+import com.audacity.ridemate.Model.LocalModel.RideDAO;
 
 /**
  * Created by Prince on 6/1/17.
