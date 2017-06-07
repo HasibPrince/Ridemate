@@ -18,7 +18,7 @@ public class ViewUtils {
         fragmentManager.beginTransaction()
                 .replace(frameId,fragment,null)
                 //.add(frameId,fragment)
-                .addToBackStack(null)
+                //.addToBackStack(null)
                 .commit();
 
     }

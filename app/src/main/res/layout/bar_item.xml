@@ -29,7 +29,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp">
 
-
     <ImageView
         android:id="@+id/icon"
         android:layout_width="50dp"
