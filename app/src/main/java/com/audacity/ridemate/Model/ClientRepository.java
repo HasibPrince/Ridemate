@@ -25,7 +25,7 @@ public class ClientRepository {
     public void getClients(final DataReadyListener dataReadyListener){
         fetchFromLocalDataSource(dataReadyListener);
 
-         if(!localDataSource.doesDataExist()){
+         //if(!localDataSource.doesDataExist()){
             remoteDataSource.getData(new DataFetchedListener<List<com.audacity.ridemate.Model.RemoteModel.Client>>() {
                 @Override
                 public void onDtaFetched(List<Client> data) {
@@ -34,7 +34,7 @@ public class ClientRepository {
                 }
 
             });
-        }
+        //}
     }
 
     private void fetchFromLocalDataSource(final DataReadyListener dataReadyListener) {

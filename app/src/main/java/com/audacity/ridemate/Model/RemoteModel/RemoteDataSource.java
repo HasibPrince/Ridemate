@@ -6,6 +6,7 @@ import com.audacity.ridemate.Model.DataFetchedListener;
 import com.audacity.ridemate.Model.DataSource;
 import com.audacity.ridemate.Rest.ApiClient;
 import com.audacity.ridemate.Rest.ApiInterface;
+import com.google.firebase.crash.FirebaseCrash;
 
 import java.util.List;
 
@@ -48,6 +49,7 @@ public class RemoteDataSource implements DataSource<List<Client>>{
             @Override
             public void onFailure(Call<ClientResponse> call, Throwable t) {
                 Log.d(TAG, t.toString());
+                FirebaseCrash.report(new Exception(t.getMessage()));
             }
         });
 

@@ -10,9 +10,12 @@ import android.location.Location;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 
+import com.google.firebase.crash.FirebaseCrash;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.Exchanger;
 
 /**
  * Created by Prince on 6/1/17.
@@ -38,7 +41,9 @@ public class LocationManager {
         }
 
         Location location = locationManager.getLastKnownLocation(bestProvider);
+        if(location!=null)
         Log.d(this.getClass().getName(), "Location: " + location.getProvider() + "==>>lat: " + location.getLatitude() + " lon: " + location.getLongitude());
+
         return location;
     }
 
@@ -49,8 +54,9 @@ public class LocationManager {
 
         try {
             addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1); // Here 1 represent max location result to returned, by documents it recommended 1 to 5
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
+            FirebaseCrash.report(new Exception(e.getMessage()));
         }
 
         if(addresses!=null) {

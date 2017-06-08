@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "815450213504",
+    "firebase_url": "https://api-project-815450213504.firebaseio.com",
+    "project_id": "api-project-815450213504",
+    "storage_bucket": "api-project-815450213504.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815450213504:android:d63812517688562d",
+        "android_client_info": {
+          "package_name": "com.audacity.ridemate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815450213504-nrtiaqcj5ofm7hlu3hkketpvhn7no8qe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.audacity.ridemate",
+            "certificate_hash": "74f6ca45b11ba08379d74bfa959fc7a4d0683e01"
+          }
+        },
+        {
+          "client_id": "815450213504-kumok1kvefnbtiq0a6o45556o0rtkara.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATTPOhLJAHTD03Q5Ej2lyz-KUgz8Z1zF4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815450213504-kumok1kvefnbtiq0a6o45556o0rtkara.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

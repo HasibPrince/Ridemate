@@ -1,6 +1,10 @@
 package com.audacity.ridemate.Utils;
 
 import android.content.Context;
+import android.os.Bundle;
+
+import com.audacity.ridemate.RidemateApplication;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -39,5 +43,13 @@ public class Utils {
     public static int getScreenWidthInPixels(Context context) {
         int screenWidth = context.getResources().getDisplayMetrics().widthPixels;
         return screenWidth;
+    }
+
+    public static void logFirebaseAnalytics(String id, String name, String type){
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, id);
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, name);
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, type);
+        RidemateApplication.getmFirebaseAnalytics().logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
     }
 }

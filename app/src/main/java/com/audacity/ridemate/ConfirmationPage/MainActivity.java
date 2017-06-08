@@ -25,27 +25,44 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private int backPressedCount;
+    private DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        init();
+
+
+    }
+
+    private void init() {
+        Toolbar toolbar = initToolbar();
+
+        initDrawer(toolbar);
+
+        initNavigationView();
+    }
+
+    private void initNavigationView() {
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+        onNavigationItemSelected(navigationView.getMenu().findItem(R.id.map));
+    }
+
+    private Toolbar initToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Confirmation");
+        return toolbar;
+    }
 
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+    private void initDrawer(Toolbar toolbar) {
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        onNavigationItemSelected(navigationView.getMenu().findItem(R.id.map));
-
-
     }
 
     @Override
@@ -55,18 +72,23 @@ public class MainActivity extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         }
 
+        if (handleBackPress(drawer)) return;
+        super.onBackPressed();
+    }
+
+    private boolean handleBackPress(DrawerLayout drawer) {
         try {
             int backStackEntryCount = getSupportFragmentManager().getBackStackEntryCount();
             if (backStackEntryCount < 2) {
                 drawer.openDrawer(Gravity.LEFT);
                 backPressedCount++;
                 handleAppFinish();
-                return;
+                return true;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        super.onBackPressed();
+        return false;
     }
 
     private void handleAppFinish() {
@@ -80,21 +102,14 @@ public class MainActivity extends AppCompatActivity
             for (int i = 0; i < fm.getBackStackEntryCount(); ++i) {
                 fm.popBackStack();
             }
-
-
             //mDrawer.setCheckedItem(R.id.navigationApraisal);
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.addCategory(Intent.CATEGORY_HOME);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             intent.replaceExtras(new Bundle());
-            //intent.setAction("");
-            //intent.setData(null);
             intent.putExtra("EXIT", true);// ***Change Here***
-
             startActivity(intent);
 
-
-            //finish();
             System.exit(0);
         }
     }
@@ -106,17 +121,6 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -124,22 +128,27 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.map) {
-            MapFragment mapFragment = MapFragment.newInstance();
-            ViewUtils.addFragmentToActivity(getSupportFragmentManager(), mapFragment,R.id.container);
-            new MapPresenter(mapFragment);
-
+            launchMapFragment();
         } else if (id == R.id.cliets) {
-
-            ClientsFragment fragment = ClientsFragment.newInstance();
-            ViewUtils.addFragmentToActivity(getSupportFragmentManager(),fragment,R.id.container);
-            new ClientsPresenter(fragment
-                    , Injector.getClientRepository(Injector.getLocalDataSource()
-                    , Injector.getRemoteDataSource()));
+            launchClientFragment();
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void launchClientFragment() {
+        ClientsFragment fragment = ClientsFragment.newInstance();
+        ViewUtils.addFragmentToActivity(getSupportFragmentManager(),fragment, R.id.container);
+        new ClientsPresenter(fragment
+                , Injector.getClientRepository(Injector.getLocalDataSource()
+                , Injector.getRemoteDataSource()));
+    }
+
+    private void launchMapFragment() {
+        MapFragment mapFragment = MapFragment.newInstance();
+        ViewUtils.addFragmentToActivity(getSupportFragmentManager(), mapFragment, R.id.container);
+        new MapPresenter(mapFragment);
     }
 
 }

@@ -14,7 +14,7 @@
         android:layout_marginBottom="40dp"
         android:gravity="bottom"
         sothree:umanoDragView="@+id/dragView"
-        sothree:umanoPanelHeight="100dp"
+        sothree:umanoPanelHeight="110dp"
         sothree:umanoScrollableView="@+id/list">
 
         <RelativeLayout
@@ -140,7 +140,7 @@
                 <LinearLayout
                     android:id="@+id/list"
                     android:layout_width="match_parent"
-                    android:layout_height="220dp"
+                    android:layout_height="200dp"
                     android:orientation="vertical">
 
                     <RelativeLayout

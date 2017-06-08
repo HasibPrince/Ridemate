@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.audacity.ridemate.Model.LocalModel.Ride;
 import com.audacity.ridemate.NavigationBarAdapter;
 import com.audacity.ridemate.R;
+import com.audacity.ridemate.Utils.Utils;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -29,6 +30,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.crash.FirebaseCrash;
 
 
 public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragmentContract.View,NavigationBarAdapter.NavigationItemSelectedListener {
@@ -120,6 +122,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragm
             MapsInitializer.initialize(getActivity().getApplicationContext());
         } catch (Exception e) {
             e.printStackTrace();
+            FirebaseCrash.report(new Exception(e.getMessage()));
+
         }
         mMapView.getMapAsync(this);
     }
@@ -141,6 +145,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,MapFragm
             address.setText(this.locationManager.getAddress(location));
 
         }
+        Utils.logFirebaseAnalytics("100",this.locationManager.getAddress(location), "Location");
     }
 
     private void askForPermission() {
