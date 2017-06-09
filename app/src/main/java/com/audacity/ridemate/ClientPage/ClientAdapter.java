@@ -68,6 +68,7 @@ public class ClientAdapter extends RecyclerView.Adapter {
             viewHolder.company.setText(clientData.getClient().getCompany());
             viewHolder.country.setText(clientData.getClient().getCountry());
 
+        viewHolder.tagContainer.removeAllViewsInLayout();
         for(Tag tag : clientData.getTag()){
             TextView textView = new TextView(context);
 
