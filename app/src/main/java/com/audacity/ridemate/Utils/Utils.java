@@ -1,7 +1,11 @@
 package com.audacity.ridemate.Utils;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 
 import com.audacity.ridemate.RidemateApplication;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -43,6 +47,17 @@ public class Utils {
     public static int getScreenWidthInPixels(Context context) {
         int screenWidth = context.getResources().getDisplayMetrics().widthPixels;
         return screenWidth;
+    }
+
+    public static void checkLocationPermission(Activity context) {
+        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            askForPermission(context);
+        }
+    }
+
+    private static void askForPermission(Activity context) {
+        ActivityCompat.requestPermissions( context, new String[] {  Manifest.permission.ACCESS_COARSE_LOCATION  },
+                101 );
     }
 
     public static void logFirebaseAnalytics(String id, String name, String type){

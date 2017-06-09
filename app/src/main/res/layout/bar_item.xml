@@ -20,14 +20,13 @@
         android:layout_alignParentTop="true"
         android:background="#F0F0F0"
         android:visibility="invisible"
-        android:foregroundGravity="top"
         android:src="@drawable/down_arrow"
         android:scaleType="fitXY"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="20dp">
 
     <ImageView
         android:id="@+id/icon"

@@ -1,15 +1,20 @@
 package com.audacity.ridemate;
 
 import android.*;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Criteria;
 import android.location.Geocoder;
 import android.location.Location;
+import android.location.LocationListener;
+import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 
+import com.audacity.ridemate.ClientPage.ClientPageContract;
+import com.audacity.ridemate.Utils.Utils;
 import com.google.firebase.crash.FirebaseCrash;
 
 import java.io.IOException;
@@ -21,30 +26,36 @@ import java.util.concurrent.Exchanger;
  * Created by Prince on 6/1/17.
  */
 
-public class LocationManager {
+public class LocationManager implements LocationListener{
 
+    private final LocationChangeListener listener;
     private Context context;
     private android.location.LocationManager locationManager;
 
-    public LocationManager(Context context){
+    public LocationManager(Context context,LocationChangeListener listener){
         this.context = context;
+        this.listener = listener;
         locationManager = (android.location.LocationManager) context.getSystemService(context.LOCATION_SERVICE);
+        Utils.checkLocationPermission((Activity) context);
+        this.locationManager.requestLocationUpdates(getBestProvider(),2000,5,this);
+
     }
 
     public Location findCurrentLocation(){
-        Criteria criteria = new Criteria();
-        String bestProvider = locationManager.getBestProvider(criteria, true);
+        String bestProvider = getBestProvider();
 
-        if (ActivityCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
-            return null;
-        }
+        Utils.checkLocationPermission((Activity) context);
 
         Location location = locationManager.getLastKnownLocation(bestProvider);
         if(location!=null)
         Log.d(this.getClass().getName(), "Location: " + location.getProvider() + "==>>lat: " + location.getLatitude() + " lon: " + location.getLongitude());
 
         return location;
+    }
+
+    private String getBestProvider() {
+        Criteria criteria = new Criteria();
+        return locationManager.getBestProvider(criteria, true);
     }
 
     public String getAddress(Location location){
@@ -63,5 +74,27 @@ public class LocationManager {
             return addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
         }
         return "";
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        if(location!=null) {
+            listener.onLocationChanged(location);
+        }
+    }
+
+    @Override
+    public void onStatusChanged(String s, int i, Bundle bundle) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String s) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String s) {
+
     }
 }
