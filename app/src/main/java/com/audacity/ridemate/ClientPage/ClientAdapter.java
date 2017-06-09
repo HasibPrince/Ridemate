@@ -42,7 +42,7 @@ public class ClientAdapter extends RecyclerView.Adapter {
     private List<ClientData> clientDataList;
     FcsImageLoader fcsImageLoader;
 
-    public ClientAdapter(Context context, List<ClientData> clientDataList){
+    public ClientAdapter(Context context, List<ClientData> clientDataList) {
         this.context = context;
         this.clientDataList = clientDataList;
         fcsImageLoader = new FcsImageLoader();
@@ -57,35 +57,32 @@ public class ClientAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-            final ClientViewHolder viewHolder = (ClientViewHolder) holder;
-            ClientData clientData = clientDataList.get(position);
-            //fcsImageLoader.displayImage(clientData.getClient().getLogo(),viewHolder.logo);
+        final ClientViewHolder viewHolder = (ClientViewHolder) holder;
+        ClientData clientData = clientDataList.get(position);
+
         Glide.with(context)
                 .load(clientData.getClient().getLogo())
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(viewHolder.logo);
+
         viewHolder.name.setText(clientData.getClient().getName());
-            viewHolder.company.setText(clientData.getClient().getCompany());
-            viewHolder.country.setText(clientData.getClient().getCountry());
+        viewHolder.company.setText(clientData.getClient().getCompany());
+        viewHolder.country.setText(clientData.getClient().getCountry());
 
         viewHolder.tagContainer.removeAllViewsInLayout();
-        for(Tag tag : clientData.getTag()){
-            TextView textView = new TextView(context);
+        bindTags(viewHolder, clientData);
 
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams((int) 100, (int) 50);
-            layoutParams.width = LinearLayout.LayoutParams.WRAP_CONTENT;
-            layoutParams.height = LinearLayout.LayoutParams.WRAP_CONTENT;
-            layoutParams.leftMargin = ViewUtils.dpToPx(context, 5);
-            int padding = ViewUtils.dpToPx(context, 5);
-            textView.setPadding(padding, padding, padding, padding);
+        setupExpandableLayout(viewHolder);
 
-            textView.setLayoutParams(layoutParams);
-            textView.setText(tag.getTag());
-            textView.setBackground(ResourcesCompat.getDrawable(context.getResources(),R.drawable.rounded_shape,null));
-            viewHolder.tagContainer.addView(textView);
+        viewHolder.buttonLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                viewHolder.expandableLayout.toggle();
+            }
+        });
+    }
 
-        }
-
+    private void setupExpandableLayout(final ClientViewHolder viewHolder) {
         viewHolder.expandableLayout.setInRecyclerView(true);
         viewHolder.expandableLayout.setInterpolator(new FastOutLinearInInterpolator());
 
@@ -120,13 +117,25 @@ public class ClientAdapter extends RecyclerView.Adapter {
 
             }
         });
+    }
 
-        viewHolder.buttonLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                viewHolder.expandableLayout.toggle();
-            }
-        });
+    private void bindTags(ClientViewHolder viewHolder, ClientData clientData) {
+        for (Tag tag : clientData.getTag()) {
+            TextView textView = new TextView(context);
+
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams((int) 100, (int) 50);
+            layoutParams.width = LinearLayout.LayoutParams.WRAP_CONTENT;
+            layoutParams.height = LinearLayout.LayoutParams.WRAP_CONTENT;
+            layoutParams.leftMargin = ViewUtils.dpToPx(context, 5);
+            int padding = ViewUtils.dpToPx(context, 5);
+            textView.setPadding(padding, padding, padding, padding);
+
+            textView.setLayoutParams(layoutParams);
+            textView.setText(tag.getTag());
+            textView.setBackground(ResourcesCompat.getDrawable(context.getResources(), R.drawable.rounded_shape, null));
+            viewHolder.tagContainer.addView(textView);
+
+        }
     }
 
     private void setButtonLayoutRotation(ClientViewHolder viewHolder) {
@@ -139,7 +148,7 @@ public class ClientAdapter extends RecyclerView.Adapter {
         return clientDataList.size();
     }
 
-    public void setClientDataList(List<ClientData> clientDataList){
+    public void setClientDataList(List<ClientData> clientDataList) {
         this.clientDataList = clientDataList;
         notifyDataSetChanged();
 
