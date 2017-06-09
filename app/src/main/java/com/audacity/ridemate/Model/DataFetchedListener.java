@@ -6,4 +6,5 @@ package com.audacity.ridemate.Model;
 
 public interface DataFetchedListener<T> {
     void onDtaFetched(T data);
+    void onError(String message);
 }

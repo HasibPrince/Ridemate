@@ -21,6 +21,7 @@ import retrofit2.Retrofit;
 
 public class RemoteDataSource implements DataSource<List<Client>>{
     private static final String TAG = RemoteDataSource.class.getName();
+    public static final String AUTH = "32DFCFD@#&DSFDSFSDF!L@?hh7@32DF";
     private static RemoteDataSource instance;
 
     public static RemoteDataSource getInstance() {
@@ -36,14 +37,13 @@ public class RemoteDataSource implements DataSource<List<Client>>{
 
     @Override
     public void getData(final DataFetchedListener<List<Client>> dataFetchedListener) {
-        ApiInterface apiService =
-                ApiClient.getClient().create(ApiInterface.class);
-        Call<ClientResponse> call = apiService.getClients("32DFCFD@#&DSFDSFSDF!L@?hh7@32DF");
+        ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
+        Call<ClientResponse> call = apiService.getClients(AUTH);
 
         call.enqueue(new Callback<ClientResponse>() {
             @Override
             public void onResponse(Call<ClientResponse> call, Response<ClientResponse> response) {
-                dataFetchedListener.onDtaFetched(response.body().getClients());
+                handleResponse(response, dataFetchedListener);
             }
 
             @Override
@@ -53,5 +53,13 @@ public class RemoteDataSource implements DataSource<List<Client>>{
             }
         });
 
+    }
+
+    private void handleResponse(Response<ClientResponse> response, DataFetchedListener<List<Client>> dataFetchedListener) {
+        if(!response.body().isError()) {
+            dataFetchedListener.onDtaFetched(response.body().getClients());
+        }else{
+            dataFetchedListener.onError(response.body().getMessage());
+        }
     }
 }

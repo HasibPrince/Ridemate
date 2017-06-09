@@ -25,10 +25,20 @@ public class ClientsPresenter implements ClientPageContract.Presenter {
     }
 
     private void getClientsFromRepo() {
+        view.showLoader();
+
         repository.getClients(new ClientRepository.DataReadyListener() {
             @Override
             public void onDataReady(List<ClientData> clientDataList) {
-                view.showClients(clientDataList);
+                if(!clientDataList.isEmpty()) {
+                    view.hideLoader();
+                    view.showClients(clientDataList);
+                }
+            }
+
+            @Override
+            public void onDataError(String message) {
+                view.showErrorMessage(message);
             }
         });
     }

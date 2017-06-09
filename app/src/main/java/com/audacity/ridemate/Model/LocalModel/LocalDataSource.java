@@ -27,6 +27,11 @@ public class LocalDataSource implements ILocalDataSource<List<com.audacity.ridem
 
     @Override
     public void getData(DataFetchedListener<List<ClientData>> dataFetchedListener) {
+        List<ClientData> clientDataList =  createClientDataListFromClients();
+        dataFetchedListener.onDtaFetched(clientDataList);
+    }
+
+    private List<ClientData> createClientDataListFromClients() {
         List<ClientData> clientDataList = new ArrayList<>();
 
         for(Client client : Client.getClients()){
@@ -35,7 +40,7 @@ public class LocalDataSource implements ILocalDataSource<List<com.audacity.ridem
             clientDataList.add(clientData);
         }
 
-        dataFetchedListener.onDtaFetched(clientDataList);
+        return clientDataList;
     }
 
     @Override
@@ -49,23 +54,31 @@ public class LocalDataSource implements ILocalDataSource<List<com.audacity.ridem
         Client.clear();
         Tag.clear();
 
-        for(com.audacity.ridemate.Model.RemoteModel.Client clientData : clientList) {
-            Client client = new Client();
-            client.setName(clientData.getName());
-            client.setCompany(clientData.getCompany());
-            client.setLogo(clientData.getLogo());
-            client.setCountry(clientData.getCountry());
-            client.save();
+        for(com.audacity.ridemate.Model.RemoteModel.Client remoteClient : clientList) {
+            saveClient(remoteClient);
 
-            for (com.audacity.ridemate.Model.RemoteModel.Tag tag : clientData.getTags()) {
-                Tag tagDB = new Tag();
-                tagDB.setCompany(clientData.getCompany());
-                tagDB.setTag(tag.getTag());
-                tagDB.setUrl(tag.getUrl());
-                tagDB.save();
+            for (com.audacity.ridemate.Model.RemoteModel.Tag tag : remoteClient.getTags()) {
+                saveTag(remoteClient, tag);
             }
         }
 
+    }
+
+    private void saveTag(com.audacity.ridemate.Model.RemoteModel.Client remoteClient, com.audacity.ridemate.Model.RemoteModel.Tag tag) {
+        Tag tagDB = new Tag();
+        tagDB.setCompany(remoteClient.getCompany());
+        tagDB.setTag(tag.getTag());
+        tagDB.setUrl(tag.getUrl());
+        tagDB.save();
+    }
+
+    private void saveClient(com.audacity.ridemate.Model.RemoteModel.Client clientData) {
+        Client client = new Client();
+        client.setName(clientData.getName());
+        client.setCompany(clientData.getCompany());
+        client.setLogo(clientData.getLogo());
+        client.setCountry(clientData.getCountry());
+        client.save();
     }
 }
 

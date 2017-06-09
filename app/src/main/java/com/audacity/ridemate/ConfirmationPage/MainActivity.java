@@ -1,18 +1,21 @@
 package com.audacity.ridemate.ConfirmationPage;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.transition.Explode;
+import android.transition.Fade;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 import android.widget.Toast;
 
 import com.audacity.ridemate.ClientPage.ClientsFragment;
@@ -30,10 +33,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
         setContentView(R.layout.activity_main);
         init();
-
-
+        getSupportActionBar().setElevation(0);
+        setupWindowAnimations();
     }
 
     private void init() {
@@ -63,6 +67,19 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+    }
+
+    private void setupWindowAnimations() {
+        //Fade fade = null;
+        Explode explode = null;
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            //fade = new Fade();
+            //fade.setDuration(3000);
+            explode = new Explode();
+            explode.setDuration(1000);
+            getWindow().setEnterTransition(explode);
+        }
+
     }
 
     @Override

@@ -3,6 +3,8 @@ package com.audacity.ridemate.SplashScreen;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.Slide;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,9 +21,21 @@ public class SplashScreen extends AppCompatActivity implements AnimationChainCom
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
         setContentView(R.layout.activity_splash_screen);
         initUI();
         AnimationChainCompleteObserver.GetInstance().addObserver(this);
+        setupWindowAnimations();
+    }
+
+    private void setupWindowAnimations() {
+        Slide slide = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            slide = new Slide();
+            slide.setDuration(1000);
+            getWindow().setExitTransition(slide);
+        }
+
     }
 
     private void initUI() {

@@ -16,7 +16,7 @@ public interface ClientPageContract {
         void showLoader();
         void hideLoader();
         void showClients(List<ClientData> clientDataList);
-
+        void showErrorMessage(String message);
     }
 
     public interface Presenter extends BasePresenter{
