@@ -43,6 +43,7 @@ public class LocationManager implements LocationListener{
 
     public Location findCurrentLocation(){
         String bestProvider = getBestProvider();
+        this.locationManager.requestLocationUpdates(bestProvider,2000,5,this);
 
         Utils.checkLocationPermission((Activity) context);
 

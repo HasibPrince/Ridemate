@@ -14,10 +14,10 @@ import java.util.List;
  */
 
 public class ClientRepository {
-    private ILocalDataSource localDataSource;
-    private DataSource remoteDataSource;
+    private ILocalDataSource<List<Client>> localDataSource;
+    private DataSource<List<Client>> remoteDataSource;
 
-    public ClientRepository(ILocalDataSource localDataSource, DataSource remoteDataSource){
+    public ClientRepository(ILocalDataSource<List<Client>> localDataSource, DataSource<List<Client>> remoteDataSource){
         this.localDataSource = localDataSource;
         this.remoteDataSource = remoteDataSource;
     }

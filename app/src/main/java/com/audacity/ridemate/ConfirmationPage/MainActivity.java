@@ -157,6 +157,7 @@ public class MainActivity extends AppCompatActivity
     private void launchClientFragment() {
         ClientsFragment fragment = ClientsFragment.newInstance();
         ViewUtils.addFragmentToActivity(getSupportFragmentManager(),fragment, R.id.container);
+        getSupportActionBar().setTitle("Clients");
         new ClientsPresenter(fragment
                 , Injector.getClientRepository(Injector.getLocalDataSource()
                 , Injector.getRemoteDataSource()));
@@ -165,6 +166,7 @@ public class MainActivity extends AppCompatActivity
     private void launchMapFragment() {
         MapFragment mapFragment = MapFragment.newInstance();
         ViewUtils.addFragmentToActivity(getSupportFragmentManager(), mapFragment, R.id.container);
+        getSupportActionBar().setTitle("Confirmation");
         new MapPresenter(mapFragment);
     }
 
