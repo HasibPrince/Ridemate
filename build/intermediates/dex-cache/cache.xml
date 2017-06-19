@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.2/f1bc476cc167b18e66c297df599b2377131a8947/gson-2.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/gson-2.6.2_bfd6af76d31ba217fe1f6c0c586e686ae34d618a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/glide-3.5.2_d788323dc762b3e33a4aff6d8991d236584f8c76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0_cd42c7fb08e4fd2fc6fd8862120c8ba1effc5386.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/converter-gson-2.0.2_64e09cfeba0475ce26bd43a70a5ea27b9f3b9c5a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.android/build-cache/343462c4b5f2bbea91dc9e34f6736e06aca1dea0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d79c575e1d97b0298746a4c032a0c1dc201c2f82">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/classes_e92ba0d54e74f0a077f0838e247b468f561ce5dc.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Prince/.gradle/caches/modules-2/files-2.1/com.michaelpardo/activeandroid/3.1.0-SNAPSHOT/4ab7b0182975bc57c49efc5e0b3baa4a10e4ec08/activeandroid-3.1.0-SNAPSHOT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ab7b0182975bc57c49efc5e0b3baa4a10e4ec08">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/transforms/dex/debug/folders/1000/10/activeandroid-3.1.0-SNAPSHOT_175300e64e26ac006f8a67c64d56d576c0355910/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3eb45d89170762b7cab8e2b16996b5312961e553">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_da9ade4b719034edc5f7d76e57e0328ccaabb4d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.gradle/caches/modules-2/files-2.1/com.michaelpardo/activeandroid/3.1.0-SNAPSHOT/4ab7b0182975bc57c49efc5e0b3baa4a10e4ec08/activeandroid-3.1.0-SNAPSHOT.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ab7b0182975bc57c49efc5e0b3baa4a10e4ec08">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/activeandroid-3.1.0-SNAPSHOT_175300e64e26ac006f8a67c64d56d576c0355910.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/okio-1.6.0_13eca433c528df466627d4198d01f9cd6e534fb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.android/build-cache/387d63f985f40003e94c60bc90863244d8e92ec9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/classes_547d2a5282ae47719a8d2779cce34ddf98caec4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.android/build-cache/55c2e54dfcdf926028c5b76e3823c5ef184b57ae/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="29bd9a40adebb952fbe97515aac9db5dfbd90d93">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/classes_abd07fe2e010fbec12a1b953e58a7c56cad542ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_2ba640a9b958d15ebb24471d835335f46b077e2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.android/build-cache/5dd47f9b5ef00898b9f9b547e14ac6a46876a137/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0a534044236cf81b002604643d23e7ca56bd1ee0">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/classes_d5aba488d6c54e76c88a9270364ad49f1c2ebc4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.android/build-cache/14722258dbf642c6080ef2778b9e1e4ecea76029/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f83a631abfdb790591a720e0cfb5f41329831c3">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/classes_f4f95e753243244d0ede06d37b4ce5127dd68985.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.2/43eeae0b9fb087bb3194ba59ab63a38a32fbf3e/retrofit-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/retrofit-2.0.2_0c194a27fca373ee9073f29a293e723b71fc243e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5508b471271b8676b286761cec908b9582301530/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.android/build-cache/b60e0f1a177c2cafd5f231cca4374e3219613a9c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da832806828ba407284c0c4b1d87b8f9ed9f2520">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/classes_9a4c1c79a25c834dedcb1d0e5e4047b3c71760e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Prince/.android/build-cache/902a38a4e7280e31e788826d9a5023f321f26422/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3cef25b344d6893e5e2d9b1ae38d180955e9d3ef">
+        <dex dex="/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/pre-dexed/debug/classes_dbd9c787d83f9dcf53b190100a9d91d8248c7cbe.jar" />
+    </item>
+
+</items>

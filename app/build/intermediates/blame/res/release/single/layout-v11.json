@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/layout-v11/notification_media_action.xml",
+        "source": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/layout-v11/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/layout-v11/notification_template_big_media.xml",
+        "source": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/layout-v11/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/layout-v11/notification_media_cancel_action.xml",
+        "source": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/layout-v11/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/layout-v11/notification_template_big_media_narrow.xml"
+    }
+]

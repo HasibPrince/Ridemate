@@ -1,0 +1,7 @@
+#Sat Jun 17 01:32:10 BDT 2017
+base.0=/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5508b471271b8676b286761cec908b9582301530
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_da9ade4b719034edc5f7d76e57e0328ccaabb4d2/classes.dex
+base.1=/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_da9ade4b719034edc5f7d76e57e0328ccaabb4d2
+file.0=/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5508b471271b8676b286761cec908b9582301530/classes.dex
