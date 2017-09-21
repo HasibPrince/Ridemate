@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/menu/menu_main.xml",
+        "source": "/Users/Prince/.android/build-cache/4cd824c98b9510537215b6d87f7ba4d5cf8506fd/output/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/menu/bottom_navigation_items.xml",
+        "source": "/Users/Prince/AndroidStudioProjects/Ridemate/app/src/main/res/menu/bottom_navigation_items.xml"
+    },
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/menu/main.xml",
+        "source": "/Users/Prince/AndroidStudioProjects/Ridemate/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/res/merged/release/menu/activity_main_drawer.xml",
+        "source": "/Users/Prince/AndroidStudioProjects/Ridemate/app/src/main/res/menu/activity_main_drawer.xml"
+    }
+]

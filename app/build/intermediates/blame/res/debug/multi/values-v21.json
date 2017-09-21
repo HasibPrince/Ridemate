@@ -1,0 +1,1388 @@
+[
+    {
+        "outputFile": "/Users/Prince/AndroidStudioProjects/Ridemate/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 103,
+                    "endOffset": 154
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 159,
+                    "endColumn": 63,
+                    "endOffset": 218
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 223,
+                    "endColumn": 66,
+                    "endOffset": 285
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 290,
+                    "endColumn": 63,
+                    "endOffset": 349
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 354,
+                    "endLine": 17,
+                    "endColumn": 12,
+                    "endOffset": 946
+                },
+                "from": {
+                    "file": "/Users/Prince/AndroidStudioProjects/Ridemate/app/src/main/res/values-v21/styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 612,
+                        "endLine": 26,
+                        "endColumn": 12,
+                        "endOffset": 1204
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 951,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 1228
+                },
+                "from": {
+                    "file": "/Users/Prince/AndroidStudioProjects/Ridemate/app/src/main/res/values-v21/styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endLine": 7,
+                        "endColumn": 12,
+                        "endOffset": 333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1233,
+                    "endLine": 29,
+                    "endColumn": 12,
+                    "endOffset": 1558
+                },
+                "from": {
+                    "file": "/Users/Prince/AndroidStudioProjects/Ridemate/app/src/main/res/values-v21/styles.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1210,
+                        "endLine": 34,
+                        "endColumn": 12,
+                        "endOffset": 1535
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1563,
+                    "endLine": 34,
+                    "endColumn": 12,
+                    "endOffset": 1830
+                },
+                "from": {
+                    "file": "/Users/Prince/AndroidStudioProjects/Ridemate/app/src/main/res/values-v21/styles.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 339,
+                        "endLine": 13,
+                        "endColumn": 12,
+                        "endOffset": 606
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1835,
+                    "endColumn": 90,
+                    "endOffset": 1921
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1926,
+                    "endColumn": 102,
+                    "endOffset": 2024
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2029,
+                    "endColumn": 102,
+                    "endOffset": 2127
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2132,
+                    "endColumn": 104,
+                    "endOffset": 2232
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2237,
+                    "endColumn": 106,
+                    "endOffset": 2339
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2344,
+                    "endColumn": 108,
+                    "endOffset": 2448
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2453,
+                    "endColumn": 108,
+                    "endOffset": 2557
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2562,
+                    "endColumn": 108,
+                    "endOffset": 2666
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2671,
+                    "endColumn": 108,
+                    "endOffset": 2775
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 2780,
+                    "endColumn": 108,
+                    "endOffset": 2884
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 2889,
+                    "endColumn": 106,
+                    "endOffset": 2991
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 2996,
+                    "endColumn": 102,
+                    "endOffset": 3094
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 3099,
+                    "endColumn": 118,
+                    "endOffset": 3213
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 3218,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 3368
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 3373,
+                    "endLine": 51,
+                    "endColumn": 12,
+                    "endOffset": 3523
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 3528,
+                    "endColumn": 104,
+                    "endOffset": 3628
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 3633,
+                    "endColumn": 120,
+                    "endOffset": 3749
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 3754,
+                    "endColumn": 100,
+                    "endOffset": 3850
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 3855,
+                    "endLine": 56,
+                    "endColumn": 12,
+                    "endOffset": 3997
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 4002,
+                    "endLine": 58,
+                    "endColumn": 12,
+                    "endOffset": 4138
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 4143,
+                    "endColumn": 102,
+                    "endOffset": 4241
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 4246,
+                    "endColumn": 118,
+                    "endOffset": 4360
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 4365,
+                    "endColumn": 106,
+                    "endOffset": 4467
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 4472,
+                    "endColumn": 102,
+                    "endOffset": 4570
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 4575,
+                    "endLine": 64,
+                    "endColumn": 12,
+                    "endOffset": 4725
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 4730,
+                    "endLine": 66,
+                    "endColumn": 12,
+                    "endOffset": 4896
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 4901,
+                    "endLine": 68,
+                    "endColumn": 12,
+                    "endOffset": 5045
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 5050,
+                    "endLine": 70,
+                    "endColumn": 12,
+                    "endOffset": 5210
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 5215,
+                    "endLine": 72,
+                    "endColumn": 12,
+                    "endOffset": 5367
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 5372,
+                    "endLine": 74,
+                    "endColumn": 12,
+                    "endOffset": 5518
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 5523,
+                    "endColumn": 118,
+                    "endOffset": 5637
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 5642,
+                    "endLine": 80,
+                    "endColumn": 12,
+                    "endOffset": 6009
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 6014,
+                    "endLine": 82,
+                    "endColumn": 12,
+                    "endOffset": 6158
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 6163,
+                    "endLine": 84,
+                    "endColumn": 12,
+                    "endOffset": 6307
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 6312,
+                    "endColumn": 111,
+                    "endOffset": 6419
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 6424,
+                    "endColumn": 146,
+                    "endOffset": 6566
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 6571,
+                    "endLine": 88,
+                    "endColumn": 12,
+                    "endOffset": 6719
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 6724,
+                    "endLine": 90,
+                    "endColumn": 12,
+                    "endOffset": 6866
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 6871,
+                    "endColumn": 74,
+                    "endOffset": 6941
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 6946,
+                    "endColumn": 88,
+                    "endOffset": 7030
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 7035,
+                    "endColumn": 86,
+                    "endOffset": 7117
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 7122,
+                    "endColumn": 100,
+                    "endOffset": 7218
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 7223,
+                    "endColumn": 102,
+                    "endOffset": 7321
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 7326,
+                    "endLine": 139,
+                    "endColumn": 12,
+                    "endOffset": 10173
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 10178,
+                    "endLine": 142,
+                    "endColumn": 12,
+                    "endOffset": 10359
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 10364,
+                    "endLine": 186,
+                    "endColumn": 12,
+                    "endOffset": 13223
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 187,
+                    "startColumn": 4,
+                    "startOffset": 13228,
+                    "endLine": 189,
+                    "endColumn": 12,
+                    "endOffset": 13421
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 190,
+                    "startColumn": 4,
+                    "startOffset": 13426,
+                    "endLine": 192,
+                    "endColumn": 12,
+                    "endOffset": 13621
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 193,
+                    "startColumn": 4,
+                    "startOffset": 13626,
+                    "endLine": 194,
+                    "endColumn": 12,
+                    "endOffset": 13744
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 195,
+                    "startColumn": 4,
+                    "startOffset": 13749,
+                    "endLine": 196,
+                    "endColumn": 12,
+                    "endOffset": 13867
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 197,
+                    "startColumn": 4,
+                    "startOffset": 13872,
+                    "endLine": 198,
+                    "endColumn": 12,
+                    "endOffset": 13980
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 199,
+                    "startColumn": 4,
+                    "startOffset": 13985,
+                    "endLine": 201,
+                    "endColumn": 12,
+                    "endOffset": 14163
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 202,
+                    "startColumn": 4,
+                    "startOffset": 14168,
+                    "endLine": 203,
+                    "endColumn": 12,
+                    "endOffset": 14294
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 204,
+                    "startColumn": 4,
+                    "startOffset": 14299,
+                    "endLine": 206,
+                    "endColumn": 12,
+                    "endOffset": 14495
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 207,
+                    "startColumn": 4,
+                    "startOffset": 14500,
+                    "endColumn": 88,
+                    "endOffset": 14584
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 208,
+                    "startColumn": 4,
+                    "startOffset": 14589,
+                    "endColumn": 110,
+                    "endOffset": 14695
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 209,
+                    "startColumn": 4,
+                    "startOffset": 14700,
+                    "endLine": 211,
+                    "endColumn": 12,
+                    "endOffset": 14928
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 212,
+                    "startColumn": 4,
+                    "startOffset": 14933,
+                    "endColumn": 100,
+                    "endOffset": 15029
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 213,
+                    "startColumn": 4,
+                    "startOffset": 15034,
+                    "endColumn": 94,
+                    "endOffset": 15124
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 214,
+                    "startColumn": 4,
+                    "startOffset": 15129,
+                    "endColumn": 122,
+                    "endOffset": 15247
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 215,
+                    "startColumn": 4,
+                    "startOffset": 15252,
+                    "endColumn": 128,
+                    "endOffset": 15376
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 216,
+                    "startColumn": 4,
+                    "startOffset": 15381,
+                    "endColumn": 116,
+                    "endOffset": 15493
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 217,
+                    "startColumn": 4,
+                    "startOffset": 15498,
+                    "endLine": 219,
+                    "endColumn": 12,
+                    "endOffset": 15670
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 220,
+                    "startColumn": 4,
+                    "startOffset": 15675,
+                    "endColumn": 98,
+                    "endOffset": 15769
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 221,
+                    "startColumn": 4,
+                    "startOffset": 15774,
+                    "endLine": 222,
+                    "endColumn": 12,
+                    "endOffset": 15904
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 223,
+                    "startColumn": 4,
+                    "startOffset": 15909,
+                    "endLine": 224,
+                    "endColumn": 12,
+                    "endOffset": 16047
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 225,
+                    "startColumn": 4,
+                    "startOffset": 16052,
+                    "endLine": 226,
+                    "endColumn": 12,
+                    "endOffset": 16182
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 227,
+                    "startColumn": 4,
+                    "startOffset": 16187,
+                    "endLine": 228,
+                    "endColumn": 12,
+                    "endOffset": 16301
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 229,
+                    "startColumn": 4,
+                    "startOffset": 16306,
+                    "endLine": 232,
+                    "endColumn": 12,
+                    "endOffset": 16502
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 233,
+                    "startColumn": 4,
+                    "startOffset": 16507,
+                    "endLine": 234,
+                    "endColumn": 12,
+                    "endOffset": 16621
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 235,
+                    "startColumn": 4,
+                    "startOffset": 16626,
+                    "endColumn": 92,
+                    "endOffset": 16714
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 236,
+                    "startColumn": 4,
+                    "startOffset": 16719,
+                    "endColumn": 110,
+                    "endOffset": 16825
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 237,
+                    "startColumn": 4,
+                    "startOffset": 16830,
+                    "endColumn": 55,
+                    "endOffset": 16881
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 238,
+                    "startColumn": 4,
+                    "startOffset": 16886,
+                    "endLine": 239,
+                    "endColumn": 12,
+                    "endOffset": 16988
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 240,
+                    "startColumn": 4,
+                    "startOffset": 16993,
+                    "endLine": 243,
+                    "endColumn": 12,
+                    "endOffset": 17183
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 244,
+                    "startColumn": 4,
+                    "startOffset": 17188,
+                    "endLine": 245,
+                    "endColumn": 12,
+                    "endOffset": 17294
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 246,
+                    "startColumn": 4,
+                    "startOffset": 17299,
+                    "endLine": 247,
+                    "endColumn": 12,
+                    "endOffset": 17427
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 248,
+                    "startColumn": 4,
+                    "startOffset": 17432,
+                    "endColumn": 94,
+                    "endOffset": 17522
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 249,
+                    "startColumn": 4,
+                    "startOffset": 17527,
+                    "endColumn": 90,
+                    "endOffset": 17613
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 250,
+                    "startColumn": 4,
+                    "startOffset": 17618,
+                    "endColumn": 90,
+                    "endOffset": 17704
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 251,
+                    "startColumn": 4,
+                    "startOffset": 17709,
+                    "endColumn": 116,
+                    "endOffset": 17821
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 252,
+                    "startColumn": 4,
+                    "startOffset": 17826,
+                    "endLine": 253,
+                    "endColumn": 12,
+                    "endOffset": 17960
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 254,
+                    "startColumn": 4,
+                    "startOffset": 17965,
+                    "endColumn": 70,
+                    "endOffset": 18031
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 255,
+                    "startColumn": 4,
+                    "startOffset": 18036,
+                    "endColumn": 82,
+                    "endOffset": 18114
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 256,
+                    "startColumn": 4,
+                    "startOffset": 18119,
+                    "endLine": 265,
+                    "endColumn": 12,
+                    "endOffset": 18737
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 266,
+                    "startColumn": 4,
+                    "startOffset": 18742,
+                    "endColumn": 56,
+                    "endOffset": 18794
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 267,
+                    "startColumn": 4,
+                    "startOffset": 18799,
+                    "endColumn": 57,
+                    "endOffset": 18852
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 268,
+                    "startColumn": 4,
+                    "startOffset": 18857,
+                    "endLine": 279,
+                    "endColumn": 12,
+                    "endOffset": 19476
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 280,
+                    "startColumn": 4,
+                    "startOffset": 19481,
+                    "endLine": 291,
+                    "endColumn": 12,
+                    "endOffset": 20112
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 292,
+                    "startColumn": 4,
+                    "startOffset": 20117,
+                    "endColumn": 118,
+                    "endOffset": 20231
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 293,
+                    "startColumn": 4,
+                    "startOffset": 20236,
+                    "endColumn": 128,
+                    "endOffset": 20360
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 294,
+                    "startColumn": 4,
+                    "startOffset": 20365,
+                    "endLine": 296,
+                    "endColumn": 12,
+                    "endOffset": 20531
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 297,
+                    "startColumn": 4,
+                    "startOffset": 20536,
+                    "endLine": 299,
+                    "endColumn": 12,
+                    "endOffset": 20697
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 300,
+                    "startColumn": 4,
+                    "startOffset": 20702,
+                    "endColumn": 128,
+                    "endOffset": 20826
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 301,
+                    "startColumn": 4,
+                    "startOffset": 20831,
+                    "endLine": 303,
+                    "endColumn": 12,
+                    "endOffset": 20997
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 304,
+                    "startColumn": 4,
+                    "startOffset": 21002,
+                    "endColumn": 130,
+                    "endOffset": 21128
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 305,
+                    "startColumn": 4,
+                    "startOffset": 21133,
+                    "endLine": 307,
+                    "endColumn": 12,
+                    "endOffset": 21298
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 308,
+                    "startColumn": 4,
+                    "startOffset": 21303,
+                    "endLine": 310,
+                    "endColumn": 12,
+                    "endOffset": 21473
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 311,
+                    "startColumn": 4,
+                    "startOffset": 21478,
+                    "endLine": 315,
+                    "endColumn": 12,
+                    "endOffset": 21814
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/fcd57034f1b6e889e33552d9be608b2ae66c5b32/output/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 316,
+                    "startColumn": 4,
+                    "startOffset": 21819,
+                    "endLine": 318,
+                    "endColumn": 12,
+                    "endOffset": 22012
+                },
+                "from": {
+                    "file": "/Users/Prince/.android/build-cache/62c1d428b6fa3f98b4657b2faa1262a794b757a3/output/res/values-v21/values-v21.xml"
+                }
+            }
+        ]
+    }
+]
